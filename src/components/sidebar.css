@@ -1,0 +1,344 @@
+/* Sidebar.css */
+* {
+  font-family: "Poppins";
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.admin-dashboard {
+  display: flex;
+  width: 1438px;
+  height: auto;
+}
+
+.sidebar ul li {
+  width: 290px;
+  height: 50px;
+  cursor: pointer;
+  border-bottom: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+
+  border-image-source: linear-gradient(
+      0deg,
+      rgba(230, 230, 230, 0.2),
+      rgba(230, 230, 230, 0.2)
+    ),
+    linear-gradient(0deg, #e6e6e6, #e6e6e6);
+}
+
+.sidebar ul li p {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin: 0;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: #555555;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.sidebar-content {
+  margin-top: 20px;
+  width: 1140px;
+  height: auto;
+  padding: 20px;
+  margin-left: 20px;
+  /* border: 1px solid #2676c2; */
+}
+
+.breadcrumbs {
+  margin-bottom: 30px;
+}
+
+.breadcrumbs2 {
+  color: #2676c2;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.usermanagement-top-buttons {
+  width: 633px;
+  height: 31px;
+  display: flex;
+  justify-content: space-between;
+  /* margin-left: 80px; */
+}
+
+.usermanagement-top-buttons button {
+  width: 184px;
+  height: 30px;
+  border: 1px solid #dadada;
+  border-radius: 20px;
+  text-align: center;
+  color: #888888;
+  /* margin-left: 80px; */
+}
+.usermanagement-top-buttons button.active {
+  width: 184px;
+  height: 30px;
+  border: 1px solid #2676c2;
+  background-color: rgb(38, 118, 194, 0.1);
+  color: #2676c2;
+  border-radius: 20px;
+  text-align: center;
+  /* opacity: 0.3; */
+  /* margin-left: 80px; */
+}
+
+.usermanagement-top-clicking-buttons {
+  background: fixed;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.usermanagement-top-clicking-buttons button {
+  border: none;
+  background: none;
+  color: #2676c2;
+  font-size: 14px;
+  position: relative;
+  right: 95px;
+}
+.searchbar1 {
+  position: absolute;
+  top: 180px;
+  display: flex;
+  /* width: 100; */
+  width: 1050px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchbar1 input {
+  width: 633px;
+  border-radius: 20px;
+  height: 45px;
+  outline: none;
+  border: 1px solid #c1c1c1;
+  box-shadow: 2px 2px 2px 0px #1111111a;
+}
+
+
+.searchbar1 div input[placeholder="Search what you want"] {
+  padding-left: 27px;
+}
+
+.custom-table {
+  width: 948px;
+  border-collapse: collapse;height: auto;
+}
+
+.custom-table th,
+.custom-table td {
+  border-bottom: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.custom-table th {
+  background-color: #eeeeee; /* Light grey background color */
+  border-radius: 4px;
+  color: #888888;
+  font-size: 16px;
+}
+
+.active1 {
+  color: green;
+}
+
+.inactive1 {
+  color: red;
+}
+
+.table-details {
+  position: absolute;
+  top: 280px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #393939;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 10px;
+  width: 150px;
+  margin-bottom: 15px;
+  gap: 5px;
+}
+
+
+.a{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.a label{
+  font-size: 14px;
+  font-weight: 400;
+  color: #393939;
+}
+
+.a  input[placeholder]{
+  padding-left: 20px;
+}
+
+
+
+input[type="checkbox"] {
+  height: 22px;
+  width: 22px;
+}
+
+.button-remove{
+  width: 191px;
+  height: 39px;border: 1px solid #2676C2;
+  color: #2676C2;
+  border-radius: 4px;
+}
+
+.samecolor{
+  color: #2676C2;
+  font-size: 16px;
+  font-weight: 400;
+}
+ 
+.css-1la267r-MuiAreaElement-root{
+  background: linear-gradient(0deg, #2676C2, #2676C2),
+linear-gradient(172.99deg, #2676C2 -73.05%, rgba(38, 118, 194, 0) 84.09%);
+}
+
+
+
+
+
+/* responsive  */
+
+/* Default styles */
+.admin-dashboard {
+  display: flex;
+}
+
+.sidebar {
+  width: 15%; /* Adjust as needed for laptops */
+
+}
+
+.sidebar-content {
+  width: 85%; /* Adjust as needed for laptops */
+}
+
+/* Media query for TVs and large screens */
+@media screen and (min-width: 1200px) {
+  .sidebar {
+    width: 20%; /* Adjust for larger screens */
+   
+  
+  }
+
+  .sidebar-content {
+    width: 80%; /* Adjust for larger screens */
+    /* margin-left: 20px; */
+  }
+}
+
+/* Media query for laptops */
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    width: 30%; /* Adjust for laptops */
+  }
+
+  .sidebar-content {
+    width: 70%; /* Adjust for laptops */
+    /* margin-left: 20px; */
+  }
+}
+
+
+
+
+
+/* Sidebar.css */
+
+* {
+  font-family: "Poppins";
+}
+
+.admin-dashboard {
+  display: flex;
+  max-width: 1438px; /* Set maximum width for the entire dashboard */
+  margin: 0 auto; /* Center the dashboard horizontally */
+}
+
+.sidebar {
+  width: 20%; /* Adjust as needed for smaller screens */
+}
+
+.sidebar ul li {
+  width: 100%;
+}
+
+.sidebar ul li p {
+  padding-left: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.sidebar-content {
+  width: 80%; /* Adjust as needed for smaller screens */
+  padding: 20px;
+}
+
+/* Your existing styles for breadcrumbs, user management buttons, search bar, table, etc. */
+
+/* Media query for laptops and larger screens */
+@media screen and (max-width: 1200px) {
+  .admin-dashboard {
+    flex-direction: row; /* Stack sidebar and content vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .sidebar,
+  .sidebar-content {
+    width: 100%; /* Full width for both sidebar and content */
+  }
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    width: 30%; /* Adjust for tablets */
+  }
+
+  .sidebar-content {
+    width: 70%; /* Adjust for tablets */
+  }
+}
+
+/* Media query for TVs and large screens */
+@media screen and (min-width: 1600px) {
+  .sidebar {
+    width: 20%; /* Adjust for larger screens */
+    font-size: 16px;
+  }
+
+  .sidebar-content {
+    width: 80%; /* Adjust for larger screens */
+  }
+}
+
